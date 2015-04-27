@@ -1,0 +1,22 @@
+{
+  "name": "Porfolio-Aliese",
+  "version": "0.0.0",
+  "homepage": "https://github.com/alieseparker/Aliese-Porfolio",
+  "description": "A rails app to display my portfolio",
+  "authors": [
+    "Aliese Parker"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.4"
+  }
+}
