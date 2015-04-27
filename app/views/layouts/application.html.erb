@@ -1,14 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>PorfolioAliese</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-<%= yield %>
+    <title>PorfolioAliese</title>
 
-</body>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag    'styles', media: 'all', 'data-turbolinks-track' => true %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'scripts', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+
+    <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        <!-- Bootstrap -->
+
+
+  </head>
+
+  <body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav nav-justified">
+              <li><a href="#section1">Home</a></li>
+              <li><a href="#section2">Resume</a></li>
+              <li class="dropdown">
+                <a href="#section3" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">SafeSpace</a></li>
+                  <li><a href="#">UrbanHoe</a></li>
+                </ul>
+              </li>
+              <li><a href="#section4">Location</a></li>
+              <li><a href="#section5">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container -->
+    </div><!--/.navbar -->
+
+    <%= yield %>
+<div class="container">
+    <div class="col-sm-8 col-sm-offset-2 text-center">
+
+      <ul class="list-inline center-block">
+        <li><a href="https://www.linkedin.com/in/alieseparker"><%= image_tag("socialmedia/icon_linkedin_48.png") %></a></li>
+        <li><a href="https://github.com/alieseparker"><%= image_tag("socialmedia/Octocat.png") %></a></li>
+      </ul>
+
+    </div><!--/col-->
+</div><!--/container-->
+
+<div id="footer">
+  <div class="container">
+    <p class="text-muted">Copyright ©2015 Aliese Parker</p>
+  </div>
+</div>
+
+<ul class="nav pull-right scroll-top">
+  <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+</ul>
+
+
+  </body>
 </html>

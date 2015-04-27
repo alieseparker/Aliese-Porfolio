@@ -2,11 +2,6 @@
 
 ## This app is built to host my portfolio and blog.
 
-This app is built with bootstrap, in order to view boostrap
-documentation, install jekyll, install rouge, and run 'jekyll serve'
-from the command line in the /bootstrap dir.
-navigate to localhost:4000
-
 ### How to run tests
 This app uses
 - [ minitest-rails-capybara (https://github.com/blowmage/minitest-rails-capybara )]
@@ -15,3 +10,11 @@ $ 'rake'
 
 Sources:
 - https://help.github.com/articles/markdown-basics/
+
+Credits:
+
+Thank you Erlen Masson for these wonderful social media icons.
+- http://www.erlen.co.uk/download/erlens-social-media-icon-set-to-download/
+
+Theme adapted from
+- http://www.bootstrapzero.com/bootstrap-template/the-firm
